@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header-wrapper">
+            <div class="header-wrapper-inner">
+                <div class="header">
+                    <div class="header-text-wrapper">
+                        <div class="header-text header-text-main">
+                            <h2>Zapomenutá historie</h2>
+                            <h1>Horské lesy Jeseníků</h1>
+                        </div>
+                        <div class="header-text header-text-small">
+                            <h2>Zapomenutá historie</h2>
+                            <h1>Horské lesy Jeseníků</h1>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>mapa</li>
+                            <li>fotolokátor</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Nadpis</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel dolore
+                delectus esse consequatur at nulla, consequuntur sint quas ea. Incidunt,
+                ex. Consequatur ipsa earum veritatis fugiat iusto, doloremque sunt beatae
+                quaerat laboriosam nemo soluta quidem porro quia. Dolore reprehenderit cum
+                voluptatibus eius assumenda ipsam tenetur asperiores magni aliquid
+                eligendi doloribus quidem ipsa et praesentium provident molestias quaerat
+                laboriosam, veniam aspernatur repellendus. Debitis sapiente, odit iste
+                voluptatibus nesciunt veritatis incidunt mollitia nostrum, vitae suscipit
+                iusto molestias consequuntur rem facere perspiciatis ad! Ratione
+                reiciendis asperiores aperiam vitae facilis accusantium non aliquid,
+                facere cupiditate reprehenderit tempore veritatis eum accusamus omnis
+                tempora quos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel dolore
+                delectus esse consequatur at nulla, consequuntur sint quas ea. Incidunt,
+                ex. Consequatur ipsa earum veritatis fugiat iusto, doloremque sunt beatae
+                quaerat laboriosam nemo soluta quidem porro quia. Dolore reprehenderit cum
+                voluptatibus eius assumenda ipsam tenetur asperiores magni aliquid
+                eligendi doloribus quidem ipsa et praesentium provident molestias quaerat
+                laboriosam, veniam aspernatur repellendus. Debitis sapiente, odit iste
+                voluptatibus nesciunt veritatis incidunt mollitia nostrum, vitae suscipit
+                iusto molestias consequuntur rem facere perspiciatis ad! Ratione
+                reiciendis asperiores aperiam vitae facilis accusantium non aliquid,
+                facere cupiditate reprehenderit tempore veritatis eum accusamus omnis
+                tempora quos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel dolore
+                delectus esse consequatur at nulla, consequuntur sint quas ea. Incidunt,
+                ex. Consequatur ipsa earum veritatis fugiat iusto, doloremque sunt beatae
+                quaerat laboriosam nemo soluta quidem porro quia. Dolore reprehenderit cum
+                voluptatibus eius assumenda ipsam tenetur asperiores magni aliquid
+                eligendi doloribus quidem ipsa et praesentium provident molestias quaerat
+                laboriosam, veniam aspernatur repellendus. Debitis sapiente, odit iste
+                voluptatibus nesciunt veritatis incidunt mollitia nostrum, vitae suscipit
+                iusto molestias consequuntur rem facere perspiciatis ad! Ratione
+                reiciendis asperiores aperiam vitae facilis accusantium non aliquid,
+                facere cupiditate reprehenderit tempore veritatis eum accusamus omnis
+                tempora quos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel dolore
+                delectus esse consequatur at nulla, consequuntur sint quas ea. Incidunt,
+                ex. Consequatur ipsa earum veritatis fugiat iusto, doloremque sunt beatae
+                quaerat laboriosam nemo soluta quidem porro quia. Dolore reprehenderit cum
+                voluptatibus eius assumenda ipsam tenetur asperiores magni aliquid
+                eligendi doloribus quidem ipsa et praesentium provident molestias quaerat
+                laboriosam, veniam aspernatur repellendus. Debitis sapiente, odit iste
+                voluptatibus nesciunt veritatis incidunt mollitia nostrum, vitae suscipit
+                iusto molestias consequuntur rem facere perspiciatis ad! Ratione
+                reiciendis asperiores aperiam vitae facilis accusantium non aliquid,
+                facere cupiditate reprehenderit tempore veritatis eum accusamus omnis
+                tempora quos!
+            </p>
+            <p style="font-size: 35px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel dolore
+                delectus esse consequatur at nulla, consequuntur sint quas ea. Incidunt,
+                ex. Consequatur ipsa earum veritatis fugiat iusto, doloremque sunt beatae
+                quaerat laboriosam nemo soluta quidem porro quia. Dolore reprehenderit cum
+                voluptatibus eius assumenda ipsam tenetur asperiores magni aliquid
+                eligendi doloribus quidem ipsa et praesentium provident molestias quaerat
+                laboriosam, veniam aspernatur repellendus. Debitis sapiente, odit iste
+                voluptatibus nesciunt veritatis incidunt mollitia nostrum, vitae suscipit
+                iusto molestias consequuntur rem facere perspiciatis ad! Ratione
+                reiciendis asperiores aperiam vitae facilis accusantium non aliquid,
+                facere cupiditate reprehenderit tempore veritatis eum accusamus omnis
+                tempora quos!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        const threshold = 450;
+        window.onscroll = function () {
+            resizeHeader();
+        };
+        function resizeHeader() {
+            const mainElement = document.querySelector(".wrapper");
+
+            if (
+                document.body.scrollTop > threshold ||
+                document.documentElement.scrollTop > threshold
+            ) {
+                mainElement.classList.add("fixed");
+            } else {
+                mainElement.classList.remove("fixed");
+            }
+        }
+    </script>
+</body>
+
+</html>
