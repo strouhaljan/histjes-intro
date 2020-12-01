@@ -23,7 +23,7 @@ body {
   /* height: 600px; */
   height: 100vh;
   left: 0;
-  background: url("bg2.jpg") no-repeat;
+  background: url("bg_small.jpg") no-repeat;
   background-size: cover;
   /* background-position: 0 -29rem; */
 }
@@ -186,7 +186,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100vh;
 }
 
 /* .wrapper.fixed {
@@ -224,6 +223,7 @@ body {
 .content {
   width: 1140px;
   padding: 32px 58px;
+  padding-top: calc(100vh + 58px);
   text-align: justify;
 }
 

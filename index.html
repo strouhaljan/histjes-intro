@@ -183,11 +183,9 @@
                 document.documentElement.scrollTop > threshold
             ) {
                 mainElement.classList.add("fixed");
-                mainElement.style.paddingTop = `${headerWrapper.clientHeight}px`;
                 headerWrapper.style.top = `${-(threshold)}px`
             } else {
                 mainElement.classList.remove("fixed");
-                mainElement.style.paddingTop = undefined;
                 headerWrapper.style.top = `0px`
             }
 
