@@ -53,6 +53,11 @@ body {
   user-select: none;
 }
 
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .menu ul {
   transition: all 0.25s;
   list-style: none;
